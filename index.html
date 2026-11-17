@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🐍 Snake Game</h1>
+
+        <div class="score-board">
+            <div>Score: <span id="score">0</span></div>
+            <div>Best: <span id="best">0</span></div>
+        </div>
+
+        <div class="game-box">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <div class="buttons">
+            <button id="startBtn">Start Game</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+
+        <div class="controls">
+            <button class="up" data-dir="up">▲</button>
+            <div class="middle-controls">
+                <button data-dir="left">◀</button>
+                <button data-dir="down">▼</button>
+                <button data-dir="right">▶</button>
+            </div>
+        </div>
+
+        <p id="message">Start Game दबाकर खेल शुरू करें!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
